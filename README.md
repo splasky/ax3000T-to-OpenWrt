@@ -57,7 +57,7 @@ Select the current official AX3000T **stock-bootloader layout** image matching t
 
 ## Recorded outcome and known gaps
 
-The project plan records that on 2026-11-07 the device was downgraded to 1.0.47 over bootloader TFTP, 12 NAND partitions were backed up, and OpenWrt 25.12.6 was installed with the stock bootloader layout; one reboot passed. However, `FLASH_EXECUTION_REPORT.md` and `recovery/nand-backup/manifest.json` were not present in the supplied project directory at documentation time, so this README cannot independently verify those claims. The source plan also records WAN unplugged, Wi-Fi interfaces disabled, and root password unset. Treat WAN and Wi-Fi as untested, and set a strong root password immediately on any reachable installation.
+The execution summary in [FLASH_EXECUTION_REPORT.md](FLASH_EXECUTION_REPORT.md) records the 2026-11-07 downgrade to stock 1.0.47, verified backups of all 12 mapped NAND partitions, and installation of OpenWrt 25.12.6 with the stock bootloader layout. OpenWrt booted persistently and passed one reboot. The report is sanitized for public sharing; raw NAND dumps and device-specific backup files are excluded. WAN and Wi-Fi client connectivity remain untested, and the root password was unset at the time of the report. Set a strong root password before ordinary use.
 
 ## Related files
 
